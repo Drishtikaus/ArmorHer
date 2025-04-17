@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety </title>
+    <link rel="stylesheet" href="vihaan.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  </head>
+  
+</head>
+
+
+<body>
+<header>
+<h1>🔒 WhisperPath</h1>
+<p>Your safer journey companion</p>
+</header>
+
+<div class="controls">
+<input type="text" id="from" placeholder="Start location (e.g., DTU)" />
+<input type="text" id="to" placeholder="Destination (e.g., CP)" />
+<button onclick="findRoute()">Find Route</button>
+<button onclick="toggleAddRoute()">Add Safe Route</button>
+<button onclick="clearAllRoutes()">Clear All Routes</button>
+</div>
+
+<div id="map"></div>
+
+<div class="route-list-container">
+<h2>📋 Saved Safe Routes</h2>
+<ul id="route-list"></ul>
+</div>
+
+<!-- Firebase & Leaflet -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
+<script src="https://aromerher-default-rtdb.asia-southeast1.firebasedatabase.app/"></script>
+<script src="vihaan.js"></script>
+</body>
+</html>
